@@ -12,7 +12,7 @@ router.get("/", async function (req, res, next) {
     }
 });
 
-router.post("/", async (req, res) => {
+router.post("/add", async (req, res) => {
     const { name, email, expertise, studentAssigned } = req.body;
 
     const dbData = await MentorsDetails.findOne({ email: email });

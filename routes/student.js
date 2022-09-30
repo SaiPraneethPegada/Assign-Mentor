@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
     }
 });
 
-router.post("/", async (req, res) => {
+router.post("/add", async (req, res) => {
     const { name, email, course, mentorAssigned } = req.body;
 
     const dbData = await StudentsDetails.findOne({ email: email });
