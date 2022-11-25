@@ -1,21 +1,15 @@
-# assign-mentor
+# Assign Mentor to Student API
 
-> Deployed Heroku URL : https://assigning-mentor-students.herokuapp.com
+## [Deployed URL](https://assign-mentor-students.onrender.com)
 
+### API Endpoints:
 
-
-**API Endpoints:**
-
-> Get All Students :    /student/
-
-> Add Student :   /student/add
-
-> Get All Mentors :   /mentor/
-
-> Add Mentor :    /mentor/add
-
-> Assigned Students for a particular Mentor:    /mentor/:id
-
-> Select Mentor and assign multiple students :    /assign/students
-
-> Select a student and assign/update mentor :   /assign/mentor
+| Method | End point | Description |
+| ---- | ---- | ---- |
+| POST | /student/add | will add a Student |
+| GET | /student | will fetch all Students |
+| POST | /mentor/add | will add a Mentor |
+| GET | /mentor | will fetch all Mentors |
+| PATCH | /assign/students | Select Mentor and assign multiple students |
+| PATCH | /assign/mentor | Select a student and assign/update mentor |
+| GET | /mentor/:id | will fetches all the students assigned to a mentor |
